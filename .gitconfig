@@ -1,0 +1,15 @@
+[user]
+email = shuntak217@gmail.com
+name = Shunta Komatsu
+[color]
+branch = auto
+diff = auto
+status = auto
+[pull]
+ff = only
+rebase = false
+[ghq]
+root = ~/go
+root = ~/src
+[github]
+user = skmatz
