@@ -12,7 +12,7 @@ bindkey '^H' fhist
 
 function fkill() {
   local pid
-  if [ "$UID" == "0" ]; then
+  if [ "$UID" -eq "0" ]; then
     pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
   else
     pid=$(ps -f -u $UID | sed 1d | fzf -m | awk '{print $2}')
