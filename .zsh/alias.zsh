@@ -16,19 +16,19 @@ alias ......='cd ../../../../..'
 alias ghhome='cd ~/src/github.com/skmatz'
 alias gohome='cd ~/go/src/github.com/skmatz'
 
-if [ -d "~/Desktop" ]; then
+if [ -d "$HOME/Desktop" ]; then
   alias de='cd ~/Desktop'
 fi
 
-if [ -d "~/Downloads" ]; then
+if [ -d "$HOME/Downloads" ]; then
   alias dl='cd ~/Downloads'
 fi
 
-if [ -d "~/Dropbox" ]; then
+if [ -d "$HOME/Dropbox" ]; then
   alias dr='cd ~/Dropbox'
 fi
 
-if [ -d "~/sandbox" ]; then
+if [ -d "$HOME/sandbox" ]; then
   alias sb='cd ~/sandbox'
 fi
 
