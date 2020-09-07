@@ -35,3 +35,5 @@ zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' insert-tab false
 zstyle ':completion:*' list-colors "${LS_COLORS}"
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}'
+
+source <(kubectl completion zsh)
