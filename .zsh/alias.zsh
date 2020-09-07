@@ -104,6 +104,10 @@ if type 'hyperfine' >/dev/null 2>&1; then
   alias time='hyperfine'
 fi
 
+if type 'kubectl' >/dev/null 2>&1; then
+  alias k='kubectl'
+fi
+
 if type 'nvim' >/dev/null 2>&1; then
   alias v='nvim'
   alias vc='nvim ~/.config/nvim'

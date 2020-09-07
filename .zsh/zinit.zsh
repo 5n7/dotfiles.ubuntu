@@ -8,7 +8,6 @@ zinit light romkatv/powerlevel10k
 zinit light skmatz/fghq
 zinit light skmatz/zcd
 zinit light skmatz/ztr
-zinit light supercrabtree/k
 zinit light wfxr/forgit
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
