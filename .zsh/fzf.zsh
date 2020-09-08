@@ -1,5 +1,5 @@
 function fco() {
-  git checkout $(git branch -a | tr -d ' ' | fzf --height 100% --preview 'git log --color=always {}' | head -n 1 | sed -e 's/^\*\s*//g' | perl -ep 's/remotes\/origin\///g')
+  git checkout $(git branch -a | tr -d " " | fzf --height 100% --preview "git log --color=always {}" | head -n 1 | sed -e "s/^\*\s*//g" | perl -pe "s/remotes\/origin\///g")
 }
 zle -N fco
 bindkey '^B' fco
