@@ -157,6 +157,13 @@ function mkpy() {
   touch $1/__init__.py
 }
 
+if [ -d "$HOME/Downloads" ]; then
+  function remove-latest-download() {
+    rm $(/bin/ls ~/Downloads/* -Adt | head -1)
+  }
+  alias rld='remove-latest-download'
+fi
+
 function restart-mozc() {
   killall ibus-daemon
   ibus-daemon -d -x &
