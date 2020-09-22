@@ -96,6 +96,10 @@ if type 'gomi' >/dev/null 2>&1; then
   alias rm='gomi'
 fi
 
+if type 'gitui' >/dev/null 2>&1; then
+  alias gu='gitui'
+fi
+
 if type 'htop' >/dev/null 2>&1; then
   alias top='htop'
 fi
@@ -189,3 +193,5 @@ function zbuf() {
 }
 zle -N zbuf
 bindkey '^Z' zbuf
+
+bindkey '\ef' emacs-forward-word
