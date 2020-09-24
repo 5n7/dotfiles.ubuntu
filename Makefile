@@ -1,5 +1,5 @@
-.PHONY: simlink
-simlink:
+.PHONY: symlink
+symlink:
 	ln -fs ~/src/github.com/skmatz/dotfiles/.gitconfig ~/.gitconfig
 	ln -fs ~/src/github.com/skmatz/dotfiles/.tmux.conf ~/.tmux.conf
 	ln -fs ~/src/github.com/skmatz/dotfiles/.zprofile ~/.zprofile
