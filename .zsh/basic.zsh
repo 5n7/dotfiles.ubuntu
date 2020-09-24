@@ -38,4 +38,6 @@ zstyle ':completion:*' insert-tab false
 zstyle ':completion:*' list-colors "${LS_COLORS}"
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}'
 
-source <(kubectl completion zsh)
+if type 'kubectl' >/dev/null 2>&1; then
+  source <(kubectl completion zsh)
+fi
