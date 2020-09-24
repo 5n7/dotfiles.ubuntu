@@ -40,7 +40,8 @@ alias mkdir='mkdir -pv'
 alias mv='mv -v'
 
 if type 'broot' >/dev/null 2>&1; then
-  alias c='broot'
+  source ~/.config/broot/launcher/bash/br
+  alias c='br'
 fi
 
 if type 'cd-gitroot' >/dev/null 2>&1; then
@@ -163,7 +164,9 @@ function mkpy() {
 
 if [ -d "$HOME/Downloads" ]; then
   function remove-latest-download() {
-    rm $(/bin/ls ~/Downloads/* -Adt | head -1)
+    local path=$(/bin/ls ~/Downloads/* -Adt | head -1)
+    echo $path
+    /bin/rm -ir $path
   }
   alias rld='remove-latest-download'
 fi
@@ -193,5 +196,3 @@ function zbuf() {
 }
 zle -N zbuf
 bindkey '^Z' zbuf
-
-bindkey '\ef' emacs-forward-word

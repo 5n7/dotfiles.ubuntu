@@ -23,6 +23,8 @@ setopt no_flow_control
 setopt numeric_glob_sort
 setopt prompt_subst
 
+bindkey '\ef' emacs-forward-word
+
 # completion
 fpath+=~/.zfunc
 
