@@ -2,7 +2,6 @@
 symlink:
 	ln -fs ~/src/github.com/skmatz/dotfiles/.gitconfig ~/.gitconfig
 	ln -fs ~/src/github.com/skmatz/dotfiles/.tmux.conf ~/.tmux.conf
-	ln -fs ~/src/github.com/skmatz/dotfiles/.zprofile ~/.zprofile
 	ln -fns ~/src/github.com/skmatz/dotfiles/.zsh ~/.zsh
 	ln -fs ~/src/github.com/skmatz/dotfiles/.zshenv ~/.zshenv
 	ln -fs ~/src/github.com/skmatz/dotfiles/.zshrc ~/.zshrc
