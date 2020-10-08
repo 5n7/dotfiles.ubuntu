@@ -67,6 +67,10 @@ if type 'exa' >/dev/null 2>&1; then
   alias ls='exa'
 fi
 
+function ghg() {
+  curl -Ls https://api.github.com/repos/$1/releases/latest | jq -r ".assets[].browser_download_url" | fzf | wget -i -
+}
+
 if type 'git' >/dev/null 2>&1; then
   alias g='git'
   alias gb='git branch'
