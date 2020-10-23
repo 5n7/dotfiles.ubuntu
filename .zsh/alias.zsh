@@ -77,6 +77,7 @@ if type 'git' >/dev/null 2>&1; then
   alias gc='git commit'
   alias gcm='git commit -m'
   alias gco='git checkout'
+  alias gcp='git cherry-pick'
   alias gd='git diff'
   alias gf='git fetch'
   alias gl='git log'
