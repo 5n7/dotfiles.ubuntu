@@ -26,6 +26,9 @@ export PATH="$PATH:$GOPATH/bin"
 # python
 export PATH="$HOME/.poetry/bin:$PATH"
 
+# vin
+export PATH="$HOME/.vin/bin:$PATH"
+
 # machine specific
 if [ "$HOST" = "vmlserver02" ]; then
   source $DOTFILES/.zshenv.vmlserver02
