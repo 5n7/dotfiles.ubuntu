@@ -1,17 +1,13 @@
 [[app]]
-repo = "b4b4r07/git-bump"
-keywords = ["linux", "x86_64"]
-
-[[app]]
 repo = "b4b4r07/gomi"
 keywords = ["linux", "x86_64"]
 
-[[app]]
-repo = "Canop/broot"
-keywords = ["broot"]
-command = """
-rm ~/.vin/bin/broot.exe
-"""
+# [[app]]
+# repo = "Canop/broot"
+# keywords = ["broot"]
+# command = """
+# rm ~/.vin/bin/broot.exe
+# """
 
 [[app]]
 repo = "cli/cli"
@@ -69,6 +65,10 @@ keywords = ["linux", "x86_64"]
 command = """
 ghrm completion -s zsh > ~/.zfunc/_ghrm
 """
+
+[[app]]
+repo = "skmatz/git-bump"
+keywords = ["linux", "x86_64"]
 
 [[app]]
 repo = "skmatz/vin"
