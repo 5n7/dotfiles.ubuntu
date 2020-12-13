@@ -2,7 +2,6 @@ source ~/.zinit/bin/zinit.zsh
 
 zinit ice from gh-r as program
 zinit light b4b4r07/emoji-cli
-zinit light djui/alias-tips
 zinit light mollifier/anyframe
 zinit light mollifier/cd-gitroot
 zinit light reegnz/jq-zsh-plugin

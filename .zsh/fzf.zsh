@@ -24,3 +24,9 @@ function fkill() {
 }
 zle -N fkill
 bindkey '^K' fkill
+
+function docker-remove-images() {
+  local images="$(docker images | tail +2 | sort | fzf --multi | awk '{print $3}')"
+  [[ -z "$images" ]] && return
+  docker rmi $images
+}

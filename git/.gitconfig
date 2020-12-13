@@ -14,3 +14,5 @@ root = ~/go
 root = ~/src
 [github]
 user = skmatz
+[init]
+	defaultBranch = main
